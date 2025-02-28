@@ -1,0 +1,238 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #121212; /* Dark background */
+    color: #fff; /* White text */
+}
+
+/* Form Styles */
+form {
+    width: 350px;
+    margin: 0 auto;
+    background: #1d1d1d; /* Dark background */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 0px #f1c40f; /* Gold shadow */
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #f1c40f; /* Gold border */
+    border-radius: 5px;
+    background-color: #2c2c2c; /* Darker background for inputs */
+    color: #fff; /* White text */
+}
+
+button {
+    background: #f1c40f; /* Gold button */
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #d4ac0d; /* Darker gold on hover */
+}
+
+/* Link Styles */
+p {
+    font-size: 14px;
+    color: #f1c40f; /* Gold text */
+}
+
+a {
+    color: #f1c40f; /* Gold for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #d4ac0d; /* Darker gold on hover */
+    text-decoration: underline;
+}
+
+/* Admin CSS */
+h1 {
+    color: #e74c3c; /* Bright red for admin header */
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3 {
+    color: #c0392b; /* Deep red for admin */
+}
+
+a {
+    color: #2980b9; /* Blue for admin links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+}
+
+div {
+    background-color: #1d1d1d; /* Dark background */
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+}
+
+div h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #f1c40f; /* Gold text */
+}
+
+div p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+div a.logout {
+    background-color: #e74c3c; /* Red logout button */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+div a.logout:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Manager CSS */
+h1 {
+    color: #27ae60; /* Green header for manager */
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3 {
+    color: #2ecc71; /* Lighter green for h3 in manager */
+}
+
+a {
+    color: #27ae60; /* Green for manager links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: #2c6b2f;
+    color: white;
+    border-radius: 5px;
+}
+
+div {
+    background-color: #1d1d1d;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+}
+
+div h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #f1c40f; /* Gold text */
+}
+
+div p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+div a.logout {
+    background-color: #f39c12; /* Orange logout button for manager */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+div a.logout:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+}
+
+/* User CSS */
+h1 {
+    color: #2980b9; /* Blue header for user */
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3 {
+    color: #3498db; /* Lighter blue for h3 in user */
+}
+
+a {
+    color: #2980b9; /* Blue for user links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: #1f6f91;
+    color: white;
+    border-radius: 5px;
+}
+
+div {
+    background-color: #1d1d1d;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+}
+
+div h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #f1c40f; /* Gold text */
+}
+
+div p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+div a.logout {
+    background-color: #2980b9; /* Blue logout button */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+div a.logout:hover {
+    background-color: #1f6f91; /* Darker blue on hover */
+}
