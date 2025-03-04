@@ -1,10 +1,10 @@
-t<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.List" %>
 <%@ page import="dao.LocationDAO" %>
 <html>
 <head>
     <title>Book a Ride</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/booking.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         function calculateFare() {
@@ -48,8 +48,9 @@ t<%@ page contentType="text/html;charset=UTF-8" language="java" %>
     </script>
 </head>
 <body>
-    <h2>Book a Ride</h2>
+ 
     <form action="/MegaCityCab/BookingServlet" method="post" onsubmit="return validateForm()">
+       <h2>Book a Ride</h2>
         <label for="pickup">Pickup Location:</label>
         <select id="pickup" name="pickup" onchange="calculateFare()" required>
             <%
