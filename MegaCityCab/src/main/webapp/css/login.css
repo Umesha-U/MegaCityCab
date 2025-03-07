@@ -1,92 +1,85 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #292929; /* Dark background */
-    color: #ffffff; /* White text */
+    background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    text-align: center; /* Center text */
 }
 
-/* Form styling */
-.container {
-    background-color: #20515d; /* Dark teal background for form */
-    padding: 40px 30px;
+.login-container {
+    background-color: #fff;
+    padding: 40px;
     border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px; /* Limit width */
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Title inside form */
-h2 {
+    max-width: 400px;
     text-align: center;
-    color: #ffffff;
-    margin-bottom: 20px;
 }
 
-/* Label styling */
+.login-header {
+    margin-bottom: 30px;
+}
+
+.login-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
 label {
-    font-size: 16px;
-    margin-top: 10px;
-    color: #ffffff;
     display: block;
+    margin: 10px 0 5px;
     text-align: left;
+    font-size: 14px;
+    color: #555;
 }
 
-/* Input field styling */
-input[type="text"], input[type="password"] {
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+button.login-btn {
     width: 100%;
     padding: 12px;
-    margin: 10px 0;
-    background-color: #8d8d8d; /* Light grey background for inputs */
-    color: #ffffff;
-    border: 1px solid #20515d;
-    border-radius: 5px;
-}
-
-input[type="text"]:focus, input[type="password"]:focus {
-    border-color: #2f7585; /* Focused input border color */
-}
-
-/* Button styling */
-button {
-    background-color: #20515d; /* Button background color */
-    color: #ffffff;
-    padding: 12px 20px;
+    background-color: #4a90e2;
+    color: white;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
-    width: 100%;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #2f7585; /* Button hover color */
-}
-
-/* Error Message */
-p {
-    color: red;
-    font-size: 14px;
-    text-align: center;
-}
-
-/* Register Link styling */
-a {
-    display: block;
-    text-align: center;
-    color: #ffffff; /* Dark teal color */
-    margin-top: 20px; /* Proper space between the form and the link */
     font-size: 16px;
+}
+
+button.login-btn:hover {
+    background-color: #357ab7;
+}
+
+.register-link {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
     text-decoration: none;
 }
 
-a:hover {
-    color: #2f7585; /* Lighter teal when hovering over the link */
+.register-link:hover {
+    text-decoration: underline;
 }
