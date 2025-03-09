@@ -1,191 +1,80 @@
-@charset "UTF-8";
-/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
-    color: #333333;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-/* Navigation Bar */
-nav {
-    background-color: rgba(15, 23, 42, 0.9); /* Darker blue background with opacity for translucent effect */
-    padding: 20px 0;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    backdrop-filter: blur(10px); /* Blurred effect for the navigation bar */
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    border-radius: 12px;
-    transition: background-color 200ms ease-in-out;
-}
-
-nav ul li a:hover {
-    background-color: rgba(59, 130, 246, 0.3); /* Light blue hover effect */
-}
-
-/* Hero Section with Background Image */
-.hero {
+    background: linear-gradient(to bottom, #a744a4, #03353e);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../assets/taxi.jfif'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
     height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.admin-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
     text-align: center;
-    color: white;
-    padding: 20px;
-    position: relative;
-    margin-top: 80px; /* To avoid overlap with the fixed nav */
+    width: 500px;
+    color: #fff;
 }
 
-.hero-content {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text readability */
-    padding: 40px;
-    border-radius: 16pt;
-    max-width: 600px;
-    margin: 0 auto;
+header {
+    margin-bottom: 20px;
 }
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
-    font-weight: 700;
-    animation: fadeIn 1s ease-out;
+h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
-.hero p {
-    font-size: 22px;
-    margin-bottom: 30px;
-    animation: fadeIn 1.5s ease-out;
+p {
+    color: #bbb;
 }
 
-.cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.button {
-    display: inline-block;
-    background-color: #10b981; /* Vibrant green for main action button */
-    color: white;
-    text-decoration: none;
-    padding: 12px 25px;
-    border-radius: 12px;
-    font-size: 18px;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #059669; /* Darker green on hover */
-}
-
-.secondary {
-    background-color: #20515d; /* Secondary button color */
-}
-
-.secondary:hover {
-    background-color: #2f7585;
-}
-
-/* Section Styles */
 .dashboard-content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    gap: 15px;
 }
 
 .section {
-    background-color: #20515d; /* Dark teal section background */
-    padding: 30px;
-    border-radius: 16pt;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.section h3 {
-    color: #ffffff;
-    font-size: 24px;
-}
-
-.section p {
-    color: #8d8d8d;
-    font-size: 16px;
-}
-
-/* Logout Button */
-.logout-btn {
-    background-color: #8d8d8d;
-    padding: 10px 20px;
-    border-radius: 12pt;
-}
-
-.logout-btn:hover {
-    background-color: #2f7585;
-    color: #ffffff;
-}
-
-.logout {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
     text-align: center;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+h3 {
+    color: #4a8a8f;
+    margin-bottom: 10px;
 }
 
-/* Responsive Design */
-@media only screen and (max-width: 768px) {
-    .hero-content {
-        padding: 20px;
-    }
+.button {
+    background: #4a8a8f;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+}
 
-    .hero h1 {
-        font-size: 36px;
-    }
+.button:hover {
+    background: #3b7b7f;
+}
 
-    .hero p {
-        font-size: 18px;
-    }
+.logout {
+    margin-top: 20px;
+}
 
-    .cta-buttons {
-        flex-direction: column;
-    }
+.logout-btn {
+    background: #d9534f;
+}
 
-    .button, .secondary {
-        width: 100%;
-    }
+.logout-btn:hover {
+    background: #c9302c;
 }

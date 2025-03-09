@@ -2,49 +2,48 @@
 <%@ page import="model.User" %>
 <%@ page import="jakarta.servlet.http.HttpSession" %>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Home Dashboard</title>
-    <link rel="stylesheet" href="../css/UserDashboard.css"> <!-- Link to the iOS styled CSS -->
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="../css/UserDashboard.css">
 </head>
 <body>
     <%
-        // Retrieve the user object from the existing session
         User user = (User) request.getSession(false).getAttribute("user");
-
-        // If the user is not logged in, redirect to the login page
         if (user == null) {
             response.sendRedirect("views/login.jsp?error=Please%20login%20first");
             return;
         }
     %>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#services" class="nav-link">Services</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="dashboard-container">
+        <!-- Header Section -->
+        <header>
+            <h1>WELCOME, <%= user.getUsername() %>!</h1>
+            <p>Welcome to your dashboard</p>
+        </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Work better, safer, together.</h1>
-            <p>Manage your bookings seamlessly in one place.</p>
-            <div class="cta-buttons">
-                <a href="booking.jsp" class="button primary">Go to Booking</a>
-                <a href="ViewMyBookings.jsp" class="button secondary">View Your Bookings</a>
+        <!-- Dashboard Content Section -->
+        <section class="dashboard-content">
+            <!-- Book a Ride Section -->
+            <div class="section">
+                <h3>Book a Ride</h3>
+                <p>Book your ride from here.</p>
+                <a href="booking.jsp" class="button">GO TO BOOKING</a>
             </div>
+
+            <!-- View Past Bookings Section -->
+            <div class="section">
+                <h3>Your Past Bookings</h3>
+                <p>View your previous ride bookings.</p>
+                <a href="ViewMyBookings.jsp" class="button">GO TO YOUR BOOKINGS</a>
+            </div>
+        </section>
+        
+        <!-- Logout Button -->
+        <div class="logout">
+            <a href="/MegaCityCab/LogoutServlet" class="button logout-btn">LOGOUT</a>
         </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <a href="/MegaCityCab/LogoutServlet" class="button logout-btn">Logout</a>
-    </footer>
-
+    </div>
 </body>
 </html>

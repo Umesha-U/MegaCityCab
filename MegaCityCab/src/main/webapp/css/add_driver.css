@@ -1,92 +1,65 @@
-@charset "UTF-8";
-
-/* General Styles */
 body {
+    background: linear-gradient(to bottom, #a744a4, #03353e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #292929;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header */
-h2 {
+.driver-form-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
     text-align: center;
-    color: #ffffff;
-    font-size: 36px;
-    margin-bottom: 20px;
+    width: 350px;
 }
 
-/* Form Styles */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #20515d;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+h2 {
+    color: #fff;
 }
 
-form div {
+.input-container {
     margin-bottom: 15px;
+    text-align: left;
 }
 
 label {
+    color: #bbb;
     display: block;
-    font-size: 16px;
-    color: #ffffff;
     margin-bottom: 5px;
 }
 
-input[type="text"] {
+.input-container input, 
+.input-container select {
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #292929;
-    color: #ffffff;
-}
-
-input[type="text"]:focus {
-    border-color: #2f7585;
-}
-
-button[type="submit"], button[type="button"] {
-    background-color: #20515d;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 8px;
     border: none;
-    margin-top: 10px;
+    border-radius: 5px;
+    background: #ddd;
+}
+
+button {
+    background: #4a8a8f;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
     width: 100%;
-}
-
-button[type="submit"]:hover, button[type="button"]:hover {
-    background-color: #2f7585;
-}
-
-/* Back Button */
-button[type="button"] {
-    background-color: #8d8d8d;
-}
-
-button[type="button"]:hover {
-    background-color: #2f7585;
-}
-
-/* Error Message */
-p {
-    color: red;
-    text-align: center;
+    border-radius: 5px;
     font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #3b7b7f;
+}
+
+.back-btn {
+    background: #222;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
 }

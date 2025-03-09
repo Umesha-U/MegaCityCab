@@ -5,31 +5,35 @@
     <link rel="stylesheet" href="../css/add_driver.css">
 </head>
 <body>
-    <h2>Add New Driver</h2>
-    <form action="/MegaCityCab/AddDriverServlet" method="post">
-        <div>
-            <label for="driverName">Driver Name:</label>
-            <input type="text" id="driverName" name="driverName" required />
-        </div>
-        <div>
-            <label for="licenseNumber">License Number:</label>
-            <input type="text" id="licenseNumber" name="licenseNumber" required />
-        </div>
-        <div>
-            <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" name="phone" required />
-        </div>
-        <div>
-            <button type="submit">Add Driver</button>
-        </div>
-        
-         <div>
-        <button type="button" onclick="window.location.href='managerdashboard.jsp'">Back</button>
-        </div>
-    </form>
-
-    <% if(request.getParameter("error") != null) { %>
-        <p style="color: red;"><%= request.getParameter("error") %></p>
-    <% } %>
+    <div class="driver-form-container">
+        <h2>ADD NEW DRIVER</h2>
+        <form action="/MegaCityCab/AddDriverServlet" method="POST">
+            <div class="input-container">
+                <label for="driver_name">Driver Name:</label>
+                <input type="text" name="driver_name" placeholder="Enter Driver Name" required>
+            </div>
+            <div class="input-container">
+                <label for="license_number">License Number:</label>
+                <input type="text" name="license_number" placeholder="Enter License Number" required>
+            </div>
+            <div class="input-container">
+                <label for="phone">Phone:</label>
+                <input type="text" name="phone" placeholder="Enter Phone Number" required>
+            </div>
+            <div class="input-container">
+                <label for="status">Status:</label>
+                <select name="status">
+                    <option value="Available">Available</option>
+                    <option value="Assigned">Assigned</option>
+                    <option value="Inactive">Inactive</option>
+                </select>
+            </div>
+            <button type="submit">ADD DRIVER</button>
+            <button type="button" class="back-btn" onclick="window.location.href='managerdashboard.jsp'">BACK</button>
+        </form>
+        <% if(request.getParameter("error") != null) { %>
+            <p class="error-message"><%= request.getParameter("error") %></p>
+        <% } %>
+    </div>
 </body>
 </html>
