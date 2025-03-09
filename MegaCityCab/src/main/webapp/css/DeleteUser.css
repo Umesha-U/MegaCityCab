@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #a744a4, #03353e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Delete User Container */
+.delete-user-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h2 {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+}
+
+/* User Details */
+p {
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Error Message */
+.error-message {
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+button {
+    background: #d9534f;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #c9302c;
+}
+
+/* Cancel Button */
+.cancel-btn {
+    display: block;
+    margin-top: 15px;
+    color: #bbb;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.cancel-btn:hover {
+    text-decoration: underline;
+}

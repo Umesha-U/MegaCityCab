@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #a744a4, #03353e);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #20515d;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #ddd;
+}
+
+.btn {
+    display: inline-block;
+    background: #4a8a8f;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: #3b7b7f;
+}
+
+/* System Instructions */
+#system-instructions {
+    background: #222;
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 28px;
+    color: #4a8a8f;
+}
+
+.step {
+    background: #333;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.step h3 {
+    color: #4a8a8f;
+}
+
+/* Services Section */
+#services {
+    padding: 40px 0;
+}
+
+.service-box {
+    background: #444;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.service-box h3 {
+    color: #4a8a8f;
+}
+
+/* Why Choose Us */
+#why-choose-us {
+    background: #20515d;
+    padding: 40px 0;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.feature-item {
+    background: #444;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #bbb;
+    font-size: 14px;
+}
