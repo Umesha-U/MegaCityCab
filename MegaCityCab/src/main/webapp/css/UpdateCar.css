@@ -1,35 +1,32 @@
-/* Reset Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
+/* General Styles */
 body {
-    background: #f8f8f8;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #a744a4, #03353e);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
-.driver-form-container {
-    background: #222;
+/* Update Driver Container */
+.update-driver-container {
+    background: rgba(0, 0, 0, 0.8);
     padding: 30px;
     border-radius: 10px;
     text-align: center;
-    width: 350px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Heading */
 h2 {
-    color: orange;
-    font-size: 20px;
-    margin-bottom: 15px;
-    font-weight: bold;
+    color: #4a8a8f;
+    margin-bottom: 20px;
 }
 
+/* Input Fields */
 .input-container {
     margin-bottom: 15px;
     text-align: left;
@@ -39,7 +36,6 @@ label {
     color: #bbb;
     display: block;
     margin-bottom: 5px;
-    font-size: 14px;
 }
 
 .input-container input, 
@@ -49,11 +45,11 @@ label {
     border: none;
     border-radius: 5px;
     background: #ddd;
-    font-size: 14px;
 }
 
+/* Button Styling */
 button {
-    background: orange;
+    background: #4a8a8f;
     border: none;
     padding: 12px;
     color: white;
@@ -61,28 +57,16 @@ button {
     width: 100%;
     border-radius: 5px;
     font-size: 16px;
-    font-weight: bold;
-    transition: 0.3s;
     margin-top: 10px;
 }
 
 button:hover {
-    background: darkorange;
-    transform: scale(1.05);
+    background: #3b7b7f;
 }
 
-.back-btn {
-    background: black;
-    color: white;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.back-btn:hover {
-    background: #444;
-}
-
+/* Error Messages */
 .error-message {
-    color: red;
-    margin-top: 10px;
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-top: 15px;
 }

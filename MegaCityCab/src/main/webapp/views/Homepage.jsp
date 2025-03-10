@@ -1,4 +1,3 @@
-<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,80 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mega City Cab - Book Your Ride</title>
     <link rel="stylesheet" href="../css/HomePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1>MEGA CITY CAB</h1>
-            <p>Your Reliable Ride, Anytime, Anywhere</p>
-            <a href="login.jsp" class="btn">FOR LOGIN</a>
+            <div class="logo">MegaCity<span>Cab</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#system-instructions">How to Use</a></li>
+                    <li><a href="#why-choose-us">Why Us?</a></li>
+                    <li><a href="login.jsp">Login</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section id="system-instructions">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay">
+            <h1>Your Reliable Ride, Anytime, Anywhere</h1>
+            <p>Book your ride with ease.</p>
+            <a href="login.jsp" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section class="dashboard" id="system-instructions">
         <div class="container">
-            <h2>HOW TO USE MEGA CITY CAB - STEP BY STEP GUIDE</h2>
-            
-            <!-- Step Sections -->
-            <div class="step">
-                <h3>USER REGISTRATION (FOR NEW USERS)</h3>
-                <p><strong>Step 1:</strong> Click on the <strong>"Register"</strong> button on the login page.</p>
-                <ul>
-                    <li>Username (must be unique)</li>
-                    <li>Password (choose a strong password)</li>
-                    <li>Email (must be a valid email address)</li>
-                    <li>Phone Number</li>
-                    <li>Full Name</li>
-                    <li>Address</li>
-                    <li>NIC Number</li>
-                </ul>
-            </div>
-            
-            <div class="step">
-                <h3>LOGGING IN TO THE SYSTEM</h3>
-                <p><strong>Step 1:</strong> Enter your <strong>Username</strong> and <strong>Password</strong>.</p>
-                <p><strong>Step 2:</strong> Click the <strong>"Login"</strong> button.</p>
-            </div>
-            
-            <div class="step">
-                <h3>BOOKING A RIDE</h3>
-                <p><strong>Step 1:</strong> Click on <strong>"Book a Ride"</strong>.</p>
-                <p><strong>Step 2:</strong> Select your <strong>Pickup Location</strong> and <strong>Destination</strong>.</p>
-                <p><strong>Step 3:</strong> The system calculates the <strong>fare</strong>.</p>
-                <p><strong>Step 4:</strong> Click <strong>"Book Now"</strong> to confirm your ride.</p>
+            <h2>HOW TO USE MEGA CITY CAB</h2>
+            <div class="grid">
+                <div class="box">
+                    <h3><i class="fas fa-user-plus"></i> User Registration</h3>
+                    <p>Register with your details to start booking rides.</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-sign-in-alt"></i> Logging In</h3>
+                    <p>Login with your username and password.</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-car"></i> Booking a Ride</h3>
+                    <p>Select pickup and drop locations, and confirm your ride.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services">
+    <section class="dashboard" id="services">
         <div class="container">
             <h2>OUR SERVICES</h2>
-            <div class="service-box">
-                <h3>CITY RIDES</h3>
-                <p>Quick and affordable city rides.</p>
-            </div>
-            <div class="service-box">
-                <h3>AIRPORT TRANSFERS</h3>
-                <p>Reliable rides to and from the airport.</p>
-            </div>
-            <div class="service-box">
-                <h3>LUXURY RIDES</h3>
-                <p>Experience comfort with our premium rides.</p>
+            <div class="grid">
+                <div class="box">
+                    <h3><i class="fas fa-city"></i> City Rides</h3>
+                    <p>Quick and affordable rides around the city.</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-plane"></i> Airport Transfers</h3>
+                    <p>Reliable transportation to and from the airport.</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-star"></i> Luxury Rides</h3>
+                    <p>Experience premium comfort and luxury rides.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section id="why-choose-us">
+    <!-- Why Choose Us Section -->
+    <section class="dashboard" id="why-choose-us">
         <div class="container">
             <h2>WHY CHOOSE MEGA CITY CAB?</h2>
-            <div class="features">
-                <div class="feature-item">FAST & RELIABLE</div>
-                <div class="feature-item">SAFE & SECURE</div>
-                <div class="feature-item">24/7 AVAILABILITY</div>
-                <div class="feature-item">AFFORDABLE PRICING</div>
+            <div class="grid">
+                <div class="box">FAST & RELIABLE</div>
+                <div class="box">SAFE & SECURE</div>
+                <div class="box">24/7 AVAILABILITY</div>
+                <div class="box">AFFORDABLE PRICING</div>
             </div>
         </div>
     </section>

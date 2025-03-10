@@ -1,22 +1,33 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-    background: linear-gradient(to bottom, #a744a4, #03353e);
+    background: #f8f8f8;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: Arial, sans-serif;
 }
 
 .driver-form-container {
-    background: rgba(0, 0, 0, 0.8);
+    background: #222;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
     width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
-    color: #fff;
+    color: orange;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .input-container {
@@ -28,35 +39,47 @@ label {
     color: #bbb;
     display: block;
     margin-bottom: 5px;
+    font-size: 14px;
 }
 
 .input-container input, 
 .input-container select {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     background: #ddd;
+    font-size: 14px;
 }
 
 button {
-    background: #4a8a8f;
+    background: orange;
     border: none;
-    padding: 10px;
+    padding: 12px;
     color: white;
     cursor: pointer;
     width: 100%;
     border-radius: 5px;
     font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
     margin-top: 10px;
 }
 
 button:hover {
-    background: #3b7b7f;
+    background: darkorange;
+    transform: scale(1.05);
 }
 
 .back-btn {
-    background: #222;
+    background: black;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.back-btn:hover {
+    background: #444;
 }
 
 .error-message {

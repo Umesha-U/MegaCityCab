@@ -1,7 +1,13 @@
-/* General Styles */
-body {
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #a744a4, #03353e);
+}
+
+body {
+    background: #f8f8f8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,81 +15,152 @@ body {
     margin: 0;
 }
 
-/* Dashboard Container */
-.dashboard-container {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    width: 500px;
-    color: #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Header */
 header {
-    margin-bottom: 20px;
-}
-
-h1 {
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 5px;
-}
-
-p {
-    color: #bbb;
-}
-
-/* Dashboard Content */
-.dashboard-content {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-/* Sections */
-.section {
     background: #222;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    color: white;
 }
 
-h3 {
-    color: #4a8a8f;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: orange;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: orange;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
-/* Buttons */
-.button {
-    background: #4a8a8f;
-    border: none;
-    padding: 10px;
-    color: white;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 14px;
-    text-decoration: none;
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
     display: inline-block;
-    margin-top: 10px;
+    padding: 10px 20px;
+    background: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: darkorange;
+}
+
+/* Dashboard Sections */
+.dashboard {
+    padding: 80px 0;
     text-align: center;
+    background: rgba(34, 34, 34, 0.9);
+    color: white;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.button:hover {
-    background: #3b7b7f;
-}
-
-/* Logout Button */
-.logout {
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
     margin-top: 20px;
 }
 
-.logout-btn {
-    background: #d9534f;
+.box {
+    background: orange;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
 
-.logout-btn:hover {
-    background: #c9302c;
+.box:hover {
+    transform: scale(1.05);
+    background: darkorange;
+}
+
+.box h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.box p {
+    color: white;
+    font-size: 14px;
+}
+
+.box .btn {
+    margin-top: 10px;
+    background: white;
+    color: orange;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.box .btn:hover {
+    background: white;
+    color: darkorange;
 }

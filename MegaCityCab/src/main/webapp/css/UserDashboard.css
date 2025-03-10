@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #a744a4, #03353e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 450px;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #bbb;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Sections */
+.section {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h3 {
+    color: #4a8a8f;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.button {
+    background: #4a8a8f;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button:hover {
+    background: #3b7b7f;
+}
+
+/* Logout Button */
+.logout {
+    margin-top: 20px;
+}
+
+.logout-btn {
+    background: #d9534f;
+}
+
+.logout-btn:hover {
+    background: #c9302c;
+}
